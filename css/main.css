@@ -1,0 +1,99 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+/* variables */
+:root{
+  --main-color: #81c408 ;
+  --main-color-hover: #679d06;
+  --secondary-color: #ffb524 ;
+}
+/* variables */
+
+/* components */
+.green-bg{
+  background-color: var(--main-color, green) ;
+}
+
+.orange-bg{
+  background-color: var(--secondary-color,orange);
+}
+
+.orange-text{
+  color: var(--secondary-color,orange) ;  
+}
+
+.green-text{
+  color: var(--main-color,green) ;
+}
+
+.orange-hover:hover{
+  color: var(--secondary-color,orange) ;
+  transition: color 0.2s linear ;   
+}
+
+.green-hover:hover{
+  color: var(--main-color,green) ;
+  transition: color 0.2s linear ;
+}
+
+.dark-green-hover:hover{
+  color: var(--main-color-hover,darkgreen) ;
+}
+
+.orange-bg-hover:hover{
+  background-color: var(--secondary-color,orange) ;
+  transition: background-color 0.2s linear ;
+}
+
+.navbar .active{
+  color: var(--main-color,green) !important ;
+}
+
+.orange-border{
+  border: var(--secondary-color,orange) 1px solid  ;
+}
+/* components */
+
+/* Above Nav Section */
+/* making the section above the navbar rounded */
+.custom-round{
+  border-radius : 270px 100px ;
+}
+/* Above Nav Section */
+
+/* Navbar Section  */
+/* hide the default arrow related to dropdown toggler (we used icon instead) */
+.dropdown-toggle::after{
+  display: none !important;
+}
+
+.modal-content{
+  background-color: rgba(255, 255, 255, 0.725) !important;
+  width: 100vw ;
+  height: 100vh ;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 .25rem rgba(129, 196, 8, 0.25) !important ;
+}
+
+.cart-badge{
+  top: 0.3rem ;
+}
+/* Navbar Section  */
+
+/* Header Section */
+header{
+  background-image: url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-badge{
+  background-color: rgba(255, 181, 36, 0.75);
+}
+
+/* Header Section */
+

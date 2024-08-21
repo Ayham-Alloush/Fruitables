@@ -101,3 +101,30 @@ header{
 
 /* Header Section */
 
+/* Sell Points Section */
+
+.sell-point-icon::after{
+  content: "";
+  border: solid var(--secondary-color,orange);
+  border-width: 1.8rem 1.6rem ;
+  border-color: var(--secondary-color,orange) transparent transparent transparent ;
+  position: absolute ;
+  top: 89% ;
+  left: 50% ;
+  translate: -50% ;
+}
+/* Sell Points Section */
+
+/* Floating Arrow */
+.floating-arrow{
+  width: 3rem ;
+  height: 3rem ;
+  right: 50px ;
+  bottom: 25px ;
+}
+
+.floating-arrow:hover{
+  background-color: var(--main-color-hover,green) ;
+}
+/* Floating Arrow */
+

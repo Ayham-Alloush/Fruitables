@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- Above Nav -->
-  <div class="bg-light">
+  <div class="bg-light" id="start">
     <div class="container">
       <div class="d-none d-lg-flex justify-content-between green-bg custom-round py-3 px-5 text-light">
         <div class="d-flex gap-3 small">
@@ -43,7 +43,7 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md sticky-top bg-light py-2">
-    <div class="container-md">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <h2 class="green-text fw-bold">Fruitables</h2>
       </a>
@@ -118,14 +118,14 @@
 
   <!-- Header -->
   <header>
-    <div class="container-md py-5">
+    <div class="container py-5">
       <div class="row text-center text-lg-start py-5">
         <div class="col-12 col-lg-7">
           <p class="orange-text fw-semibold fs-4">100% Organic Foods</p>
           <h1 class="display-3 fw-bold green-text">Organic Veggies & Fruits Foods</h1>
           <form action="" class="d-flex justify-content-center justify-content-lg-start">
             <div class="w-75 bg-primray position-relative border-2 orange-border rounded-pill mt-5 mb-5">
-              <input type="text" class="form-control form-control-lg rounded-pill border-0 py-2" placeholder="search">
+              <input type="text" name="search" class="form-control form-control-lg rounded-pill border-0 py-2" placeholder="search">
               <button type="submit" class="btn outline rounded-pill position-absolute h-100 top-0 end-0 green-bg orange-bg-hover text-light fw-semibold">Submit Now</button>
             </div>
           </form>
@@ -157,10 +157,65 @@
   </header>
   <!-- Header -->
 
+  <main>
+    <div class="container py-5 overflow-hidden">
+      <!-- Sell Points -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5 mt-4 gy-4 gy-md-none" id="hasArrow">
+        <div class="col">
+          <div class="d-flex flex-column gap-5 align-items-center bg-light pt-4 pb-1 rounded">
+            <i class="sell-point-icon bi bi-truck display-3 text-light orange-bg p-4 rounded-circle position-relative"></i>
+            <div class="text-center">
+              <h5 class="opacity-75">Free Shipping</h5>
+              <p class="text-secondary">Free on order over $300</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-column gap-5 align-items-center bg-light pt-4 pb-1 rounded">
+            <i class="sell-point-icon bi bi-person-check display-3 text-light orange-bg p-4 rounded-circle position-relative"></i>
+            <div class="text-center">
+              <h5 class="opacity-75">Security Payment</h5>
+              <p class="text-secondary">100% security payment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-column gap-5 align-items-center bg-light pt-4 pb-1 rounded">
+            <i class="sell-point-icon bi bi-arrow-left-right display-3 text-light orange-bg p-4 rounded-circle position-relative"></i>
+            <div class="text-center">
+              <h5 class="opacity-75">30 Day Return</h5>
+              <p class="text-secondary">30 day money guarantee</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-column gap-5 align-items-center bg-light pt-4 pb-1 rounded">
+            <i class="sell-point-icon bi bi-telephone-fill display-3 text-light orange-bg p-4 rounded-circle position-relative"></i>
+            <div class="text-center">
+              <h5 class="opacity-75">24/7 Support</h5>
+              <p class="text-secondary">Support every time fast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sell Points -->
+
+      <!--Floating arrow  -->
+      <div class="position-fixed d-none green-bg floating-arrow rounded-circle d-flex justify-content-center align-items-center" id="floating-arrow">
+        <a href="#start" class="text-dark">
+          <i class="bi bi-arrow-up-short fs-1"></i>
+        </a>
+      </div>
+      <!--Floating arrow  -->
+      
+    </div>
+     
+  </main>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script src="js/main.js"></script>
 
 </body>
 </html>

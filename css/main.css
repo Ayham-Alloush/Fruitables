@@ -7,6 +7,7 @@ body{
   --main-color: #81c408 ;
   --main-color-hover: #679d06;
   --secondary-color: #ffb524 ;
+  --heading-color: #45595b ;
 }
 /* variables */
 
@@ -25,6 +26,10 @@ body{
 
 .green-text{
   color: var(--main-color,green) ;
+}
+
+.gray-text{
+  color: var(--heading-color,gray ) ;
 }
 
 .orange-hover:hover{
@@ -121,6 +126,7 @@ header{
   height: 3rem ;
   right: 50px ;
   bottom: 25px ;
+  z-index: 10 ;
 }
 
 .floating-arrow:hover{
@@ -128,3 +134,38 @@ header{
 }
 /* Floating Arrow */
 
+/* Organic Products Section */
+.organic-nav .active{
+  background-color: var(--secondary-color,orange) !important;
+  color: white !important;
+}
+
+.organic-nav button{
+  width: 130px ;
+}
+
+.product-badge{
+  top: 10px ;
+  left: 10px ;
+}
+
+.add-to-cart:hover p{
+  transition: color 0.2s linear ;
+  color: white ;
+}
+
+.scaled-img{
+  transition: transform 0.5s ease ;
+}
+
+.scaled-img:hover{
+  transform: scale(1.3) ;
+}
+
+.card-shadow{
+  transition: box-shadow 0.5s ease ;
+}
+.card-shadow:hover{
+  box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+/* Organic Products Section */

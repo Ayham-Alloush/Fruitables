@@ -32,6 +32,10 @@ body{
   color: var(--heading-color,gray ) ;
 }
 
+.gray-bg{
+  background-color: var(--heading-color,gray) ;
+}
+
 .orange-hover:hover{
   color: var(--secondary-color,orange) ;
   transition: color 0.2s linear ;   
@@ -53,6 +57,14 @@ body{
 
 .orange-border{
   border: var(--secondary-color,orange) 1px solid  ;
+}
+
+.gray-border{
+  border: var(--heading-color,gray) 1px solid ;
+}
+
+.green-border{
+  border: var(--main-color,green) 1px solid ;
 }
 /* components */
 
